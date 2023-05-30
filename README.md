@@ -1,2 +1,9 @@
-# DAM-PREDD
-Desarrollo de Aplicaciones Multiplataforma 2012/2013 - Programacion y Entornos de Desarrollo (1ºCurso) 
+# Programacion y Entornos de Desarrollo
+
+Proyecto Final en Java
+
+- Base de Datos (Office)
+- Navegador Web (HTML)
+- Sistema de Gestion de Usuarios
+- Reproductor de Musica
+- Sistema de Gestion de Datos

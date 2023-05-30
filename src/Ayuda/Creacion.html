@@ -1,0 +1,98 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Creacion del Programa</title>
+    </head>
+    <body>
+        <center><h1>Creacion del Programa</h1></center>
+        <h2>Importaciones</h2>
+        <div>
+            <p>Las librerias externas utilizadas se encuentran en la ruta Proyecto\lib</p>
+            <p>BasicPlayer corresponde a la libreria del reproductor mientras que las demas corresponden a las conversiones del formato .mp3</p>
+            <p>Si estas librerias, el reproductor, no puede funcionar.</p>
+        </div>
+        <br/>
+        <h2>ForgotPassWord</h2>
+        <div>
+            <p>El JFrame 'ForgotPassWord' se abre al pulsar en dicha opcion en el JFrame 'Login'.</p>
+            <p>Contiene 2 cuadros de texto junto con dos etiquetas y un boton.</p>
+            <p>En el primer cuadro se introduce el usuario y en el segundo la pregunta, para acceder sin poner la contraseña.</p>
+            <p>Ambos datos se buscan en la BD 'Login' en la tabla 'Usuarios' para determinar si se accede o no.</p>
+            <p>En caso afirmativo, abre la ventana principal. En caso negativo, salta un mensaje de error.</p>
+        </div>
+        <br/>
+        <h2>Login</h2>
+        <div><img src="Usuarios.png" alt="Usuarios en la DB"/></div>
+        <div>
+            <p>El JFrame 'Login' se abre al ejecutar el programa.</p>
+            <p>Contiene dos cuadros de texto, dos label a modo de links y un boton.</p>
+            <p>Se introduce el nombre de usuario y la contraseña, y se pulsa el boton.</p>
+            <p>En la base de datos, en la tabla 'Usuarios' se busca si existe un usuario y contraseña que coincida.</p>
+            <p>En caso afirmativo, se abre la ventana principal. En caso negativo, saca un mensaje de error.</p>
+            <p>Los login y pass en la DB al momento de crear el programa son los de la imagen anterior.</p>
+        </div>
+        <br/>
+        <h2>Registro</h2>
+        <div>
+            <p>Desde el JFrame 'Login' se accede a este JFrame, utilizado para crear una nueva cuenta de usuario.</p>
+            <p>Contiene 3 cuadros de texto y un boton para confirmar la creacion del usuario.</p>
+            <p>Si esta se produce correctamente, muestra un mensaje confirmando la insercion en la DB.</p>
+        </div>
+        <br/>
+        <h2>Reproductor (Clase)</h2>
+        <div>
+            <p>La clase reproductor utiliza las librerias de BasicPlayer.</p>
+            <p>La clase define metodos para usar los propios de las librerias a la hora de crear y usar el repoductor.</p>
+            <p>Hay metodos de avanzar, retroceder, pausar, parar y reproducir.</p>
+        </div>
+        <br/>
+        <h2>ReproductorMusica</h2>
+        <div>
+            <p>El JFrame se abre desde el boton correspondiente en cualquiera de los paneles de la ventana principal.</p>
+            <p>Contiene un boton por funcion del reproductor y un JComboBox para seleccionar las canciones.</p>
+            <p>Cada boton hace uso de los metodos definidos en la clase 'Reproductor'</p>
+            <p>Las canciones se encuentran almacenadas en el paquete 'Musica'</p>
+            <p>La musica se sigue reproduciendo al cerrar la ventana ya que solo se oculta.</p>
+        </div>
+        <br/>
+        <h2>Navegador</h2>
+        <div>
+            <p>El JFrame Navegador se abre al pulsar en la opcion de ayuda.</p>
+            <p>Contiene un EditorPane, 2 botones de avanzar o retroceder y una combinacion de boton y cuadro de texto para ir directamente</p>
+            <p>a la pagina seleccionada.</p>
+            <p>El EditorPane es capaz de leer y representar lenguaje html de modo que la ayuda se le pasa a traves de archivos .html</p>
+            <p>Con los botones se selecciona que archivo de la ayuda se le pasa al EditorPane para que lo saque en pantalla.</p>
+        </div>
+        <br/>
+        <h2>VentanaPrincipal</h2>
+        <div>
+            <p>A la VentanaPrincipal (JFrame) se accede a traves del JFrame 'Login' o el 'ForgotPassWord'.</p>
+            <p>Esta ventana cuenta con varios LayeredPanel y un menu para navegar por sus opciones.</p>
+            <p>El menu consta de:</p>
+            <div>
+                <p>Archivo</p>
+                <ul>
+                    <li>Inicio: para volver al panel de inicio.</li>
+                    <li>Exportar: para exportar los datos de la DB a un fichero.</li>
+                    <li>Ayuda: abrir el navegador de la ayuda.</li>
+                    <li>Salir: Cerrar el programa.</li>
+                </ul>
+                <p>Edicion</p>
+                <ul>
+                    <li>Añadir Anime: añadir nuevos animes a la DB.</li>
+                    <li>Modificar Anime: modificar un anime existente.</li>
+                    <li>Borrar Anime: borrar un anime existente.</li>
+                    <li>Obtener Listado: obtener el listado de anime segun distintos parametros de busqueda.</li>
+                </ul>
+            </div>
+        </div>
+        <br/>
+        <h2>Anotaciones</h2>
+        <div>
+            <p>La ventana de anotaciones consta de un objeto jCalendar, un area de texto y dos botones que solo son visibles uno cada vez.</p>
+            <p>Al marca una fecha, escribir una nota he introducirla se guarda en un fichero de la carpeta src.</p>
+            <p>Al entrar a visualizar las notas se lee el archivo de texto y su contenido se vuelca al area de texto.</p>
+        </div>
+        <br/>
+    </body>
+</html>
